@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-10000002</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_interest</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -108,8 +108,16 @@ image_speed = 0.25;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///leave pause menu
-game_restart()
+            <string>   ///toggle windowed mode
+   
+   if window_get_fullscreen()
+      {
+      window_set_fullscreen(false);
+      }
+   else
+      {
+      window_set_fullscreen(true);
+      }
 </string>
           </argument>
         </arguments>

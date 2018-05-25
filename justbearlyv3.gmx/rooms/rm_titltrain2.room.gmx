@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>global.symbol = 'eye'</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -52,13 +52,13 @@
   </views>
   <instances>
     <instance objName="fect_shake_growing_bi" x="1120" y="480" name="inst_966E7547" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_traintilt" x="960" y="1088" name="inst_B41C723A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player_tilt" x="896" y="1088" name="inst_FC4116C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="obj_guide_tilt" x="704" y="384" name="inst_A4E09D87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trainfriend_mask2" x="1152" y="1184" name="inst_B68891E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_trainfriend2" x="1152" y="1184" name="inst_987E1434" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tiltrain_negmask" x="1152" y="1184" name="inst_947B7266" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_frame" x="262" y="151" name="inst_5BAE2099" locked="0" code="" scaleX="0.720000028610229" scaleY="0.720000028610229" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tiltcafe" x="960" y="1088" name="inst_9E1C8FE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

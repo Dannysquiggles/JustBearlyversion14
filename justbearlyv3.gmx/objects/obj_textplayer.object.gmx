@@ -33,8 +33,8 @@ shield = true
 
 alarm[0] = 3 * room_speed
 
-maxdis = 672
-mindis = 896
+maxdis = 730
+mindis = 886
 
 count = 0
 al = false

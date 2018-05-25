@@ -33,7 +33,7 @@ shield = true
 
 alarm[0] = 3 * room_speed
 
-maxdis = 288
+maxdis = 320
 mindis = 389
 
 count = 0
@@ -316,12 +316,12 @@ alarm[1] = 1 * room_speed
     alarm[0] = 2 * room_speed
     count += 1
     if count &lt; 2
-    {
+    
     if !instance_exists(fect_shake2)
     {
        instance_create(x,y,fect_shake2)
     }
-    }
+    
     if al == false
     {
     global.rate = 0
@@ -358,13 +358,12 @@ alarm[1] = 1 * room_speed
     shield = true
     alarm[0] = 2 * room_speed
     count += 1
-    if count &lt; 2
-    {
+   
     if !instance_exists(fect_shake2)
     {
         instance_create(x,y,fect_shake2)
     }
-    }
+    
         if al == false
     {
     global.rate = 0

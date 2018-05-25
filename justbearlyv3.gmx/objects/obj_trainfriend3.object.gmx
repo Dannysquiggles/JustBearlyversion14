@@ -25,8 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = obj_traintilt.x
+            <string>if instance_exists(obj_traintilt)
+{
+x = obj_traintilt.x
 y = obj_traintilt.y
+}
+else if instance_exists(obj_tiltstairs)
+{
+x = obj_tiltstairs.x
+y = obj_tiltstairs.y
+}
+else if instance_exists(obj_tiltcafe)
+{
+x = obj_tiltcafe.x
+y = obj_tiltcafe.y
+}
 
 image_speed = 0
 image_index = 1
@@ -56,8 +69,15 @@ alarm[0] = 60;
           <argument>
             <kind>1</kind>
             <string>///tiltymctiltface
-if global.stop == false{
-image_angle = obj_traintilt.image_angle}
+if global.stop == false
+{
+    if instance_exists(obj_traintilt)
+        {image_angle = obj_traintilt.image_angle}
+    else if instance_exists(obj_tiltcafe)
+        {image_angle = obj_tiltcafe.image_angle}
+    else if instance_exists(obj_tiltstairs)
+        {image_angle = obj_tiltstairs.image_angle}
+}
 </string>
           </argument>
         </arguments>

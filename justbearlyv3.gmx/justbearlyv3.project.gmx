@@ -313,12 +313,16 @@
     <sprites name="backgrounds">
       <sprite>sprites\spr_bg_night</sprite>
       <sprite>sprites\sprl_idup</sprite>
+      <sprite>sprites\spr_lidupv2</sprite>
+      <sprite>sprites\spr_lidup2v2</sprite>
       <sprite>sprites\obj_colourbg</sprite>
       <sprite>sprites\spr_lidup2</sprite>
       <sprite>sprites\spr_liduphint</sprite>
       <sprite>sprites\spr_lidhintdown</sprite>
       <sprite>sprites\liddownhint</sprite>
       <sprite>sprites\spr_liddown</sprite>
+      <sprite>sprites\spr_liddownv2</sprite>
+      <sprite>sprites\spr_liddown2v2</sprite>
       <sprite>sprites\spr_liddown2</sprite>
       <sprite>sprites\spr_lidshadowdown</sprite>
       <sprite>sprites\spr_lidshadowup</sprite>
@@ -353,6 +357,8 @@
       <sprite>sprites\spr_fg</sprite>
       <sprite>sprites\spr_player_tilt</sprite>
       <sprite>sprites\spr_traintilt</sprite>
+      <sprite>sprites\spr_tiltstair</sprite>
+      <sprite>sprites\spr_tiltcafe</sprite>
       <sprite>sprites\spr_clicktobreath2</sprite>
       <sprite>sprites\spr_clicktobreath</sprite>
     </sprites>
@@ -511,6 +517,8 @@
       <sprite>sprites\spr_fgtrain</sprite>
       <sprite>sprites\spr_playerbody</sprite>
       <sprite>sprites\spr_redscreen</sprite>
+      <sprite>sprites\spr_redscreen2</sprite>
+      <sprite>sprites\spr_redscreen3</sprite>
       <sprite>sprites\spr_colours</sprite>
       <sprite>sprites\spr_eyecontact</sprite>
       <sprite>sprites\spr_playerheadleft</sprite>
@@ -606,6 +614,7 @@
     <script>scripts\scr_continuegame.gml</script>
     <script>scripts\scr_saveroom.gml</script>
     <script>scripts\scr_followandscale_to_view.gml</script>
+    <script>scripts\scr_followandscale_to_view1.gml</script>
     <script>scripts\scr_dialrotator.gml</script>
     <script>scripts\scr_textManager.gml</script>
     <scripts name="resume">
@@ -1127,6 +1136,8 @@
         <object>objects\obj_bg_croud</object>
       </objects>
       <object>objects\obj_redface</object>
+      <object>objects\obj_redfacecat</object>
+      <object>objects\obj_redfacefrog</object>
       <object>objects\obj_eyeclosed</object>
       <object>objects\obj_colour_</object>
       <object>objects\obj_eyecontact</object>
@@ -1148,7 +1159,10 @@
     </objects>
     <objects name="tilttrain">
       <object>objects\obj_traintilt</object>
+      <object>objects\obj_tiltstairs</object>
+      <object>objects\obj_tiltcafe</object>
       <object>objects\obj_guide_tilt</object>
+      <object>objects\obj_grower_mover</object>
       <object>objects\obj_blockout</object>
       <object>objects\obj_fall</object>
       <object>objects\obj_lightvignette</object>
@@ -1168,10 +1182,10 @@
     <object>objects\obj_fonttest</object>
     <object>objects\obj_timer</object>
     <object>objects\obj_frame</object>
+    <object>objects\obj_frame_view1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
-    <room>rooms\rm_controls</room>
     <rooms name="chapter 1">
       <rooms name="morning">
         <room>rooms\rm_intro_eyes</room>
@@ -1312,6 +1326,7 @@
     <room>rooms\rm_drawing</room>
     <room>rooms\rm_wave</room>
     <room>rooms\room130</room>
+    <room>rooms\rm_controls</room>
     <room>rooms\rm_preroomgeneric</room>
   </rooms>
   <help>

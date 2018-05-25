@@ -152,32 +152,34 @@ if global.finish == 'lose' &amp;&amp; ending == 0
     //pick an eyeline
     if picked == 0
     {
-        with obj_eyeline_playerv2
+       instance_destroy(fect_shake_growing_hor)
+       audio_stop_sound(sf_trainamb)
+         with obj_eyeline_playerv2
         {
-            if place_meeting(x,y, obj_eyeline2)
+            if place_meeting(x,y, obj_eyeline_rest)
             {
                 global.eyeline = 'rest'
-                obj_train_manager_fast.picked = 1
+                obj_train_manager.picked = 1
             }
             else if place_meeting(x,y, obj_eyeline_front)
             {
                 global.eyeline = 'front'
-                obj_train_manager_fast.picked = 1
+                obj_train_manager.picked = 1
             }
              else if place_meeting(x,y, obj_cat_head)
             {
                 global.eyeline = 'cat'
-                obj_train_manager_fast.picked = 1
+                obj_train_manager.picked = 1
             }
              else if place_meeting(x,y, obj_lizard)
             {
                 global.eyeline = 'liz'
-                obj_train_manager_fast.picked = 1
+                obj_train_manager.picked = 1
             }
              else if place_meeting(x,y, obj_frog_head)
             {
                 global.eyeline = 'frog'
-                obj_train_manager_fast.picked = 1
+                obj_train_manager.picked = 1
             }
         }
     }
@@ -185,18 +187,26 @@ if global.finish == 'lose' &amp;&amp; ending == 0
 else if global.eyeline == 'rest'
 {
     global.stopall = true;
-    with obj_playerguide { move_towards_point(obj_aihead2.x, obj_aihead2.y, 10) }
-    with obj_eyeline_guider2 { move_towards_point(playerhead.x, playerhead.y, 10) }
+    /*with playerhead {image_angle = point_direction(x,y, obj_eyeline_rest.x, obj_eyeline_rest.y)}
+    with obj_eyeline_playerv2 {image_angle = point_direction(x,y, obj_eyeline_rest.x, obj_eyeline_rest.y)}
+    with obj_eyeline_rest {image_angle = point_direction(x,y, playerhead.x, playerhead.y)}
+    with obj_aihead_rest {image_angle = point_direction(x,y, playerhead.x, playerhead.y)}*/
+    with obj_playerguide { move_towards_point(obj_aihead_rest.x, obj_aihead_rest.y, 10) }
+    with obj_eyeline_guider { move_towards_point(playerhead.x, playerhead.y, 10) }
     
-    if !instance_exists(obj_redface) {instance_create(room_width/2, room_height/2, obj_redface)}
-}
-else if global.eyeline == 'cat'
+    if !instance_exists(obj_redface)
+    {
+      instance_create(room_width/2, room_height/2, obj_redface)
+      
+    }
+    }
+    else if global.eyeline == 'cat'
 {
     global.stopall = true;
     with obj_playerguide { move_towards_point(obj_cat_head.x, obj_cat_head.y, 10) }
     with cat { move_towards_point(playerhead.x, playerhead.y, 10) }
     
-    if !instance_exists(obj_redface) {instance_create(room_width/2, room_height/2, obj_redface)}
+    if !instance_exists(obj_redfacecat) {instance_create(room_width/2, room_height/2, obj_redfacecat)}
 }
 else if global.eyeline == 'liz'
 {
@@ -212,10 +222,12 @@ else if global.eyeline == 'frog'
     with obj_playerguide { move_towards_point(obj_frog_head.x, obj_frog_head.y, 10) }
     with frog { move_towards_point(playerhead.x, playerhead.y, 10) }
     
-    if !instance_exists(obj_redface) {instance_create(room_width/2, room_height/2, obj_redface)}
+    if !instance_exists(obj_redfacefrog) {instance_create(room_width/2, room_height/2, obj_redfacefrog)}
 }
         alarm[2] = -1
 }
+
+    
 </string>
           </argument>
         </arguments>

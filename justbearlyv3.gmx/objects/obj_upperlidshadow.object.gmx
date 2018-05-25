@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if instance_exists(obj_upperlid)
 {
-//y = obj_upperlid.y
+y = obj_upperlid.y
 }
 </string>
           </argument>

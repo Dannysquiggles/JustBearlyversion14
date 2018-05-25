@@ -13,7 +13,8 @@
   <code>if (keyboard_check_released(ord('R')))
 {
     game_restart();
-}</code>
+}
+global.symbol = 'hand'</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

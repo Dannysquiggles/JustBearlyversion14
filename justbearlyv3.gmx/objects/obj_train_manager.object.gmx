@@ -154,7 +154,9 @@ if global.finish == 'lose' &amp;&amp; ending == 0
     //pick an eyeline
     if picked == 0
     {
-        with obj_eyeline_playerv2
+       instance_destroy(fect_shake_growing_hor)
+       audio_stop_sound(sf_trainamb)
+         with obj_eyeline_playerv2
         {
             if place_meeting(x,y, obj_eyeline_rest)
             {
@@ -206,7 +208,7 @@ else if global.eyeline == 'rest'
     with obj_playerguide { move_towards_point(obj_cat_head.x, obj_cat_head.y, 10) }
     with cat { move_towards_point(playerhead.x, playerhead.y, 10) }
     
-    if !instance_exists(obj_redface) {instance_create(room_width/2, room_height/2, obj_redface)}
+    if !instance_exists(obj_redfacecat) {instance_create(room_width/2, room_height/2, obj_redfacecat)}
 }
 else if global.eyeline == 'liz'
 {
@@ -222,7 +224,7 @@ else if global.eyeline == 'frog'
     with obj_playerguide { move_towards_point(obj_frog_head.x, obj_frog_head.y, 10) }
     with frog { move_towards_point(playerhead.x, playerhead.y, 10) }
     
-    if !instance_exists(obj_redface) {instance_create(room_width/2, room_height/2, obj_redface)}
+    if !instance_exists(obj_redfacefrog) {instance_create(room_width/2, room_height/2, obj_redfacefrog)}
 }
         alarm[2] = -1
 }

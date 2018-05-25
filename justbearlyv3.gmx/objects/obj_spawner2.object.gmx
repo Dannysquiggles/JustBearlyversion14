@@ -87,6 +87,7 @@ global.imageindex = 0;
 nx = random_range(buffer,room_width-sprite_width-buffer)
 ny = random_range(buffer,room_height-sprite_height - buffer)
 instance_create(nx,ny,obj_yes_no_prompts)
+instance_create(x,y,fect_shake)
 alarm[1] = 2*room_speed;
 
 </string>

@@ -66,6 +66,7 @@ sound = 1
     view_xview = xv + (global.movevar * dir);
     if !audio_is_playing(sf_growing_rumble) &amp;&amp; sound == 1
 {
+    audio_pause_all()
     audio_play_sound(sf_growing_rumble,2,false)
 }
 //else
@@ -86,6 +87,7 @@ if stop == 1
     sound = 1
     audio_stop_sound(sf_growing_rumble)
     audio_stop_sound(sf_shake)
+    audio_resume_all()
 } 
 </string>
           </argument>

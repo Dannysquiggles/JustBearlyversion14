@@ -28,6 +28,7 @@
             <string>tilt = 0
 rate = 0.05
 alarm[0] = 60;
+audio_play_sound(sf_trainamb,2,true)
 </string>
           </argument>
         </arguments>

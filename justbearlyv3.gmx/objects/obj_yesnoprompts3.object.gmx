@@ -36,7 +36,7 @@ nx = random_range(buffer,room_width-sprite_width-buffer)
 ny = random_range(buffer,room_height-sprite_height-buffer)
 image_index = 2;
 global.imageindex += 1;
-//instance_create(x,y,obj_no);
+
 </string>
           </argument>
         </arguments>

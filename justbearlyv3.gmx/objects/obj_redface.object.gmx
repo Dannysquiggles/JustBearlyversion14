@@ -161,7 +161,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,fect_shake)
+            <string>instance_create(x,y,fect_shakeL)
+//image_alpha = 0
 </string>
           </argument>
         </arguments>

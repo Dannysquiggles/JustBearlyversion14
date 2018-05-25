@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_angle = point_direction(x,obj_guide_tilt.x,y,obj_guide_tilt.y)
-audio_play_sound(sf_trainamb,2,true)
+//audio_play_sound(sf_trainamb,2,true)
 sound = false
 image_speed = 0.25
 good = false

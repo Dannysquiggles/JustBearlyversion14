@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>global.symbol = 'hand'</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -57,8 +57,8 @@
     <instance objName="obj_dial_anything" x="492" y="272" name="inst_6997E7F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pointer_anything" x="585" y="364" name="inst_A909F648" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
     <instance objName="obj_date_dial_manager" x="832" y="288" name="inst_FF25D800" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_frame" x="20" y="19" name="inst_D2793B7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_flash_backwards" x="979" y="546" name="inst_DAB881F0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_flash_backwards" x="928" y="704" name="inst_DAB881F0" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_frame_view1" x="32" y="32" name="inst_2E307379" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background5" x="608" y="512" w="1" h="1" xo="0" yo="0" id="10000012" name="inst_17A96923" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
