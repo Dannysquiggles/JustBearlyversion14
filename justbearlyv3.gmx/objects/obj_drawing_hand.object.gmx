@@ -60,8 +60,10 @@ sp = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = mouse_x
-y = mouse_y
+            <string>///follow mouse &amp; draw
+
+x += (mouse_x - x) * 0.025
+y += (mouse_y - y) * 0.025
 
 if touch == 1
 {

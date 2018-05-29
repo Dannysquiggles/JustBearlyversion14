@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.talking = false
+            <string>global.talking = true
 global.state = 0
 global.rate = 0
 sound = 0
@@ -166,13 +166,12 @@ if global.cam = -1
     
         view_xview[1] = view_xview[2]
         view_yview[1] = view_yview[2]
-                global.cam = false
-        if sound == 0
-        {
+                
+
             audio_stop_all()
+            global.cam = false
             
-            sound = 1
-        }
+ 
         
   if !instance_exists(fect_shake2)
     {

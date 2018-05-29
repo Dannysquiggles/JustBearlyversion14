@@ -311,17 +311,17 @@ alarm[1] = 1 * room_speed
             <kind>1</kind>
             <string>if hit = false &amp;&amp; shield = false
 {
-    hit = true
-    shield = true
-    alarm[0] = 2 * room_speed
-    count += 1
-    if count &lt; 2
     
+ 
+    if count &lt; 2
+    {
+    if count &lt;=1
+    {
     if !instance_exists(fect_shake2)
     {
        instance_create(x,y,fect_shake2)
     }
-    
+    }
     if al == false
     {
     global.rate = 0
@@ -329,6 +329,11 @@ alarm[1] = 1 * room_speed
     alarm[2] = 0.5*room_speed
     al = true
     }
+    }
+       hit = true
+    shield = true
+    alarm[0] = 1 * room_speed
+    count += 1
 }
 </string>
           </argument>
@@ -354,16 +359,16 @@ alarm[1] = 1 * room_speed
             <kind>1</kind>
             <string>if hit = false &amp;&amp; shield = false
 {
-    hit = true
-    shield = true
-    alarm[0] = 2 * room_speed
-    count += 1
    
+
+    
+    if count &lt;= 1
+    {
     if !instance_exists(fect_shake2)
     {
         instance_create(x,y,fect_shake2)
     }
-    
+    }
         if al == false
     {
     global.rate = 0
@@ -371,7 +376,11 @@ alarm[1] = 1 * room_speed
     alarm[2] = 0.5*room_speed
     al = true
     }
-    
+    hit = true
+    shield = true
+    alarm[0] = 1 * room_speed
+    count += 1
+        
 }
 </string>
           </argument>

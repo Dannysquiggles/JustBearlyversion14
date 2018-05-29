@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///start valuses
 image_index = 1
-image_speed = 0
+image_speed = 0.05
 
 rateup = false
 
@@ -66,8 +66,8 @@ move = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    sprite_index = spr_playerchairforward
-    image_speed  = 0
+            <string>    sprite_index = spr_playerchairstill
+    image_speed  = 0.05
     move_towards_point(nx,ny, 0)
     sound = false
     //alarm[0] = 0.25 * room_speed

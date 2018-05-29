@@ -211,8 +211,8 @@ draw_set_blend_mode(bm_normal);
 pointX = obj_bathandlead.x;
 pointY = obj_bathandlead.y;
 
-y += (pointY - y) * 0.05 
-x += (pointX - x) * 0.05 
+y += (pointY - y) * 0.025 
+x += (pointX - x) * 0.025 
 }
 if stop = 2
 {

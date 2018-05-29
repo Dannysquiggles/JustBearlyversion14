@@ -432,7 +432,7 @@ else if global.oc == 3 //SPAWN LAF MAYBE, DEPENDS ON OUTCOME
     {
     //  "that'll be 3.20 thanks"
     audio_play_sound(sf_talkshort,3,false)
-    global.message = "That'll be $3.20, thanks"
+    global.message = "That'll be $4.00, thanks"
     global.col = 'white';
     with (obj_barrista_remake) //change to new smile animation
     {sprite_index = spr_barrista_joke
@@ -445,7 +445,7 @@ else if global.oc == 3 //SPAWN LAF MAYBE, DEPENDS ON OUTCOME
     {
     //IF IT HAS BEEN CHOSEN BEFORE, create laf meter
     audio_play_sound(sf_talkshort,3,false)
-    global.message = "Oh, Latte me check for you# *heh heh jokes*"
+    global.message = "Oh, Latte me check for you# *heh heh*"
      global.col = 'white';
     with (obj_barrista_remake) 
     { sprite_index = spr_barrista_joke

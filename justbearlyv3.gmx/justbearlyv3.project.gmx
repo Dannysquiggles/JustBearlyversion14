@@ -167,6 +167,7 @@
       <sprite>sprites\spr_chairfg</sprite>
       <sprite>sprites\spr_chairbackground1</sprite>
       <sprite>sprites\spr_playerchairforward</sprite>
+      <sprite>sprites\spr_playerchairstill</sprite>
       <sprite>sprites\spr_prechair</sprite>
     </sprites>
     <sprites name="resume">
@@ -304,11 +305,13 @@
         <sprite>sprites\spr_overlayhead2</sprite>
         <sprite>sprites\spr_grablight</sprite>
         <sprite>sprites\spr_smilebg2</sprite>
+        <sprite>sprites\spr_smilebg2p2</sprite>
       </sprites>
       <sprite>sprites\spr_liprightup</sprite>
       <sprite>sprites\spr_liprightup2</sprite>
       <sprite>sprites\spr_rightliplight</sprite>
       <sprite>sprites\spr_smileedge</sprite>
+      <sprite>sprites\spr_smileedge2</sprite>
     </sprites>
     <sprites name="backgrounds">
       <sprite>sprites\spr_bg_night</sprite>
@@ -609,6 +612,8 @@
     <path>paths\path0</path>
   </paths>
   <scripts name="scripts">
+    <script>scripts\scr_tweenout_create.gml</script>
+    <script>scripts\scr_tweenout.gml</script>
     <script>scripts\scr_finish_achievement.gml</script>
     <script>scripts\scr_pause.gml</script>
     <script>scripts\scr_continuegame.gml</script>

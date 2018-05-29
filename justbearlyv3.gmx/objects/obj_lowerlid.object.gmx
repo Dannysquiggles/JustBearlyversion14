@@ -33,8 +33,10 @@ startx = room_width / 2
 endpos = 1080;
 still = true;
 rate = 0;
-
+image_speed = 0
 add = 0;
+
+hover = false
 </string>
           </argument>
         </arguments>
@@ -134,6 +136,51 @@ else  if global.open = 2
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if hover == true
+{
+    if image_index &lt; 2
+    {
+        image_speed = 1
+    }
+    if image_index &gt;= 2
+    {
+        image_speed = 0
+        image_index = 2
+    }
+}
+else if hover == false
+{
+    if image_index &gt; 0
+    {
+        image_speed = -1
+    }
+    if image_index &lt;= 2
+    {
+        image_speed = 0
+        image_index = 0
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="6" enumb="56">
       <action>
@@ -178,6 +225,7 @@ image_angle = 0
           <argument>
             <kind>1</kind>
             <string>sprite_index = spr_liddownv2
+hover = false
 </string>
           </argument>
         </arguments>
@@ -202,7 +250,7 @@ image_angle = 0
             <kind>1</kind>
             <string>
 sprite_index = spr_liddown2v2
-
+hover = true
 </string>
           </argument>
         </arguments>

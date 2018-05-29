@@ -29,16 +29,26 @@
 
 ///find positions
     //bg and scale factor
-    scalefactor = view_wview/obj_pauseback.sprite_width
+    if view_visible[0]
+    {
+    scalefactor = view_wview[0]/obj_pauseback.sprite_width
     global.og = scalefactor
     xoffset = view_xview[0]
     yoffset = view_yview[0]
     
     //apply changes
     with obj_pauseback {image_xscale = obj_pauseback.scalefactor; image_yscale = obj_pauseback.scalefactor; x = xoffset; y = yoffset;}
+    }
+    else if view_visible[1]
+    {
+        scalefactor = view_wview[1]/obj_pauseback.sprite_width
+    global.og = scalefactor
+    xoffset = view_xview[1]
+    yoffset = view_yview[1]
     
-    
-    
+    //apply changes
+    with obj_pauseback {image_xscale = obj_pauseback.scalefactor; image_yscale = obj_pauseback.scalefactor; x = xoffset; y = yoffset;}
+    }
     
     
    

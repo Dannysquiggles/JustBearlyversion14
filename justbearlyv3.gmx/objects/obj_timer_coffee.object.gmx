@@ -103,7 +103,7 @@ if image_xscale &lt;= 0
     global.oc = 4
     global.grow = 2
     global.col = 'black'
-    global.message = " ... "
+    global.message2 = " ... "
     with obj_dialouter {instance_destroy()}
     with obj_blankscrn {instance_destroy()}
     with obj_dialpointer{instance_destroy()}

@@ -53,14 +53,14 @@
   <instances>
     <instance objName="obj_chat_partner" x="1679" y="874" name="inst_7365571B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chat_player" x="344" y="896" name="inst_B3C389AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_daleshapebubble" x="530" y="21" name="inst_78938CAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_daleshapebubble" x="526" y="21" name="inst_78938CAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dateshapebubble" x="792" y="151" name="inst_87B42142" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_message_circley" x="928" y="288" name="inst_75CB22A9" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
     <instance objName="obj_message_hexy" x="928" y="64" name="inst_0D98E77B" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
     <instance objName="obj_message_squarey" x="928" y="-160" name="inst_726DD868" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
     <instance objName="obj_friend_message" x="896" y="256" name="inst_6E9EDB62" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
     <instance objName="obj_machmessagedatemanager" x="896" y="416" name="inst_FC607875" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
-    <instance objName="obj_frame" x="32" y="0" name="inst_E33AB779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_frame" x="12" y="20" name="inst_E33AB779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background5" x="608" y="512" w="1" h="1" xo="0" yo="0" id="10000012" name="inst_17A96923" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

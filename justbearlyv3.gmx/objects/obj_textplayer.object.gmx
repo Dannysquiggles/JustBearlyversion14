@@ -38,6 +38,8 @@ mindis = 886
 
 count = 0
 al = false
+
+global.talking = true
 </string>
           </argument>
         </arguments>

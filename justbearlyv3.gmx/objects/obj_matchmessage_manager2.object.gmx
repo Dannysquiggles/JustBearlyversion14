@@ -300,21 +300,21 @@ if global.state = 8 //mark pickedshape
     if place_meeting(x,y, obj_message_circle) 
     {
         pickedshape = 'circle'
-        with obj_message_circle{ if x &lt; og { x+= 1}; if x &gt; og {x-=1}} //correct position
+        with obj_message_circle{ if x &gt; og { x += (og-x)*0.05}; if x &lt; og { x += (og-x)*0.05}} //correct position
         with obj_message_square{image_alpha -=0.2}
         with obj_message_hex{image_alpha -=0.2}
     }
     else if place_meeting(x,y, obj_message_square) 
     {
         pickedshape = 'square'
-        with obj_message_square{ if x &lt; og { x+= 1}; if x &gt; og {x-=1}} //correct position
+        with obj_message_square{ if x &gt; og { x += (og-x)*0.05}; if x &lt; og { x += (og-x)*0.05}} //correct position
         with obj_message_circle{image_alpha -=0.2}
         with obj_message_hex{image_alpha -=0.2}
     }
     else if place_meeting(x,y, obj_message_hex) 
     {
         pickedshape = 'hex'
-        with obj_message_hex{ if x &lt; og { x+= 1}; if x &gt; og {x-=1}} //correct position
+        with obj_message_hex{ if x &gt; og { x += (og-x)*0.05}; if x &lt; og { x += (og-x)*0.05}} //correct position
         with obj_message_circle{image_alpha -=0.2}
         with obj_message_square{image_alpha -=0.2}
     }

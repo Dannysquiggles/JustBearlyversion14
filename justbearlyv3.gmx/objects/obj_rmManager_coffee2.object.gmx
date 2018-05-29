@@ -380,7 +380,7 @@ else if global.oc == 3 //SPAWN LAF MAYBE, DEPENDS ON OUTCOME
     //{
     //  "that'll be 3.20 thanks"
     audio_play_sound(sf_talkshort,3,false)
-    global.message = "That'll be $3.20, thanks"
+    global.message = "That'll be $4.00, thanks"
     global.col = 'white';
     //with (obj_barrista_remake) //change to new smile animation
     //{image_speed = 0.5;
@@ -422,7 +422,7 @@ if global.oc == 2.5
     with obj_blackbubble {x = ox; y = oy; image_xscale = 1; image_yscale = 1;}
     //global.col = 'black';
     audio_play_sound(sf_talkingfast,3,false)
-    global.message2 = "I am so, so sorry...# I will leave now...# k by."
+    global.message2 = "I am so, so sorry...# I will leave now..."
     instance_create(x,y, fect_shakeL)
     global.rate -= 1
     global.resist += 1

@@ -213,7 +213,8 @@ alarm[1] = 30
 pointX = obj_handLead.x;
 pointY = obj_handLead.y;
 
-move_towards_point(pointX, pointY, 10);
+y += (pointY - y) * 0.05 
+x += (pointX - x) * 0.05 
 }
 if stop = 2
 {

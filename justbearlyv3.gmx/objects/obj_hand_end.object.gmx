@@ -237,6 +237,7 @@ alarm[0] = 30
             <kind>1</kind>
             <string>if col == false
 {
+audio_stop_all()
 instance_create(x+ 100, y, obj_flash_slow)
 //stop = 1
 

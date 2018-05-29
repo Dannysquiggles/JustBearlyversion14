@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.symbol = 'hand'
-image_speed = 0.25
+image_speed = 0.025
 
 //text1 = "CLICK PROMPTS"// the action to be instructed
 //text2 = "CLICK PROMPTS"// the control to use

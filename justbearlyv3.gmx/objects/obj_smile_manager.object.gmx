@@ -111,7 +111,7 @@ global.click = false
     if global.state = 0
     {
         global.state = 1
-        with obj_smilehead {image_index = 1; alarm[0] = 0.25*room_speed}
+        with obj_smilehead {sprite_index = spr_smileedge2}
         alarm[0] = 2*room_speed
     }
 }
