@@ -53,6 +53,7 @@ else
         {
             with obj_dialouter {sprite_index = (spr_outeroc2)}
             alarm[1] = 70;
+            if !steam_get_achievement("ACHIEVEMENT_THEWORST") steam_set_achievement("ACHIEVEMENT_THEWORST");
             instance_create(x,y, fect_shake)
                     al = true;
         }

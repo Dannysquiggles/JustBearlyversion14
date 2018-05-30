@@ -28,8 +28,12 @@
             <string>walk = 0
 image_speed = 0
 image_index = 7
-image_xscale = 1
-image_yscale = 1
+image_xscale = 0.5
+image_yscale = 0.5
+
+speedx = 0
+
+touch = 0
 </string>
           </argument>
         </arguments>
@@ -57,21 +61,29 @@ image_yscale = 1
     if !place_meeting(x,y, obj_curser)
     {
         image_speed = 1
-        if image_index == 9 //and image_index != 3 and image_index != 9 and image_index != 8 
+
+        move_towards_point(mouse_x,y, speedx)
+        
+        /*if image_index &gt; 4 &amp;&amp; image_index &lt; 13
         {
-            move_towards_point(mouse_x,y, 310)
+            speedx = 0
+        }
+        else if image_index &gt; 22 &amp;&amp; image_index &lt; 30
+        {
+            speedx = 0
         }
         else
-        {
-        move_towards_point(mouse_x,y, 0)
-        }
+        {*/
+            speedx = 5
+        //}
+    
         if x &gt; mouse_x
         {
-            image_xscale = -1
+            image_xscale = -0.5
         }
         else
         {
-            image_xscale = 1
+            image_xscale = 0.5
         }
     }
 }
@@ -81,7 +93,8 @@ else if walk = 0
     image_speed = 0;
     //image_index = 0
 }
-if x &gt; room_width * 0.7
+
+/*if x &gt; room_width * 0.7
 {
     walk = 2
     x += 7
@@ -92,6 +105,33 @@ if x &gt; room_width * 0.7
     }
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_loweringarm">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if touch = 0
+{
+    global.state = 1
+    touch = 1
+}
 </string>
           </argument>
         </arguments>

@@ -105,6 +105,12 @@
     <sound>sound\sound0</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="achiveroom">
+      <sprite>sprites\spr_fronthand</sprite>
+      <sprite>sprites\spr_egg</sprite>
+      <sprite>sprites\spr_loweringarm</sprite>
+      <sprite>sprites\spr_daleachive</sprite>
+    </sprites>
     <sprites name="pause">
       <sprite>sprites\spr_exitback</sprite>
       <sprite>sprites\spr_pauseplay</sprite>
@@ -417,6 +423,7 @@
       <sprite>sprites\spr_friendhead</sprite>
       <sprite>sprites\spr_speechbubble_black</sprite>
       <sprite>sprites\spr_speechbubble_white</sprite>
+      <sprite>sprites\spr_speechbubble_white2</sprite>
       <sprite>sprites\spr_wave_friend</sprite>
       <sprite>sprites\spr_stranger</sprite>
       <sprite>sprites\spr_stranger2</sprite>
@@ -447,6 +454,7 @@
       <sprite>sprites\sprite89</sprite>
       <sprite>sprites\spr_player_pullback</sprite>
       <sprite>sprites\spr_walk</sprite>
+      <sprite>sprites\spr_vortex</sprite>
       <sprite>sprites\spr_walk2</sprite>
       <sprite>sprites\spr_daydis</sprite>
       <sprite>sprites\spr_dayword</sprite>
@@ -616,6 +624,7 @@
     <script>scripts\scr_tweenout.gml</script>
     <script>scripts\scr_finish_achievement.gml</script>
     <script>scripts\scr_pause.gml</script>
+    <script>scripts\scre_haveyoufinished.gml</script>
     <script>scripts\scr_continuegame.gml</script>
     <script>scripts\scr_saveroom.gml</script>
     <script>scripts\scr_followandscale_to_view.gml</script>
@@ -965,6 +974,18 @@
       <object>objects\obj_strike</object>
       <object>objects\obj_controlspage</object>
       <object>objects\blinds</object>
+      <objects name="chievementroom">
+        <object>objects\obj_vortex</object>
+        <object>objects\obj_sidewalk</object>
+        <object>objects\obj_lowering_egg</object>
+        <object>objects\obj_dale_suprised</object>
+        <object>objects\obj_achievementroom_manager</object>
+        <object>objects\obj_speechbubble_achievement</object>
+        <object>objects\obj_fronthand</object>
+        <object>objects\obj_hand_egg</object>
+        <object>objects\obj_loweringarm</object>
+        <object>objects\obj_blind2</object>
+      </objects>
       <object>objects\obj_cover</object>
       <object>objects\obj_logo</object>
       <objects name="pause">
@@ -1018,7 +1039,6 @@
       <object>objects\obj_wake</object>
       <object>objects\obj_nightcome2</object>
       <object>objects\obj_head</object>
-      <object>objects\obj_sidewalk</object>
       <object>objects\obj_day</object>
       <object>objects\obj_end</object>
     </objects>
@@ -1328,6 +1348,7 @@
       <room>rooms\rm_pre_daw</room>
       <room>rooms\rm_drawing1</room>
     </rooms>
+    <room>rooms\rm_darkness</room>
     <room>rooms\rm_drawing</room>
     <room>rooms\rm_wave</room>
     <room>rooms\room130</room>

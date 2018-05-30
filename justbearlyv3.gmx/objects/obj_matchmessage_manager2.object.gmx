@@ -114,10 +114,10 @@ audio_play_sound(sf_partyloud,2,true)
             <string>
 if pickedshape == global.shape // win
 {
-    if !instance_exists(obj_flash)
-    {
-        instance_create(room_width/2, room_height/2, obj_flash)
-    }
+    //if !instance_exists(obj_flash)
+    //{
+    //    instance_create(room_width/2, room_height/2, obj_flash)
+    //}
             if sound = 0
     {
     audio_play_sound(sf_talkshort,2,false)
@@ -317,6 +317,15 @@ if global.state = 8 //mark pickedshape
         with obj_message_hex{ if x &gt; og { x += (og-x)*0.05}; if x &lt; og { x += (og-x)*0.05}} //correct position
         with obj_message_circle{image_alpha -=0.2}
         with obj_message_square{image_alpha -=0.2}
+    }
+        else
+    {
+            global.pause = false
+            global.state = 7.1
+            if !instance_exists(fect_shake)
+            {
+                instance_create(x,y, fect_shake)
+            }
     }
     if al = false
     {

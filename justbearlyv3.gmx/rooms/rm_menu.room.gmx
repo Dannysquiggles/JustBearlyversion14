@@ -61,8 +61,9 @@
     <instance objName="obj_controls" x="256" y="644" name="inst_E82181AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_exit" x="288" y="772" name="inst_E7BDCF6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_curser" x="1408" y="576" name="inst_DCA453CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="blinds" x="895" y="20" name="inst_0F82C94D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_frame" x="0" y="0" name="inst_8F8B9FD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blind2" x="896" y="0" name="inst_D553BB37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_vortex" x="1376" y="416" name="inst_58F12F11" locked="0" code="" scaleX="2.59999990463257" scaleY="2.59999990463257" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="fg_morning2" x="193" y="594" w="1159" h="522" xo="0" yo="0" id="10000019" name="inst_DF099CEB" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

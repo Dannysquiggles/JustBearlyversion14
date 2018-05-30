@@ -80,6 +80,7 @@ audio_play_sound(sf_fadewhite,2,false)
     if !instance_exists(spr_fullflash)
     {
         instance_create(room_width/2,room_height/2, spr_fullflash)
+        instance_destroy(obj_themebot)
     }
 }
 </string>

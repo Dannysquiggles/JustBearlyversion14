@@ -333,6 +333,15 @@ if global.state = 2 //mark pickedshape
         with obj_message_circley{image_alpha -=0.2}
         with obj_message_squarey{image_alpha -=0.2}
     }
+        else
+    {
+            global.pause = false
+            global.state = 1.1
+            //if !instance_exists(fect_shake)
+            //{
+            //    instance_create(x,y, fect_shake)
+            //}
+    }
     if al = false
     {
         audio_play_sound(sf_talkvshort,3,false)

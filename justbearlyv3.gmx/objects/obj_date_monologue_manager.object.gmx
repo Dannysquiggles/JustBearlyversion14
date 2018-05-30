@@ -241,6 +241,7 @@ else if global.state = 2
 {
     with obj_li_back{sprite_index = spr_Lilaf; image_speed = 0.25}
     instance_create(x,y,obj_themebot)
+    if !steam_get_achievement("ACHIEVEMENT_REWARD") steam_set_achievement("ACHIEVEMENT_REWARD");
     alarm[1] = 1 * room_speed
     global.state = 2.1
 }

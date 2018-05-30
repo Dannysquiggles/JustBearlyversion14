@@ -107,6 +107,7 @@ maxa = 0
           <argument>
             <kind>1</kind>
             <string>draw_set_alpha(1)
+if !steam_get_achievement("ACHIEVEMENT_CHILL") steam_set_achievement("ACHIEVEMENT_CHILL");
 room_goto(global.lastroom);
 ///turn stress bar invisible so you can be reall chill boi
 /*with obj_bar_top {image_alpha = 255}

@@ -11,25 +11,26 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>6</kind>
-            <sound>sf_trainofthoughts</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>///playsound &amp;&amp; get achievements.
+
+audio_play_sound(sf_trainofthoughts,1,false)
+global.themsound = true
+    
+</string>
           </argument>
         </arguments>
       </action>
@@ -37,21 +38,57 @@
     <event eventtype="1" enumb="0">
       <action>
         <libid>1</libid>
-        <id>212</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_sound</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>6</kind>
-            <sound>sf_trainofthoughts</sound>
+            <kind>1</kind>
+            <string>
+global.themsound = false
+ 
+audio_stop_sound(sf_trainofthoughts)
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// get achievements maybe
+if !audio_is_playing(sf_trainofthoughts)
+{
+    if global.themsound == true
+    {
+        if !steam_get_achievement("ACHIEVEMENT_JAM") steam_set_achievement("ACHIEVEMENT_JAM");
+    }
+    audio_play_sound(sf_trainofthoughts,1,false)
+}
+</string>
           </argument>
         </arguments>
       </action>
