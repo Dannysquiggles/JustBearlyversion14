@@ -164,6 +164,7 @@ if global.open &lt; 2
         {
             add = 0
             global.open -= 1
+            global.rate = 30;
         }   
 }
 else if global.open = 2
@@ -250,6 +251,9 @@ hover = true
             <kind>1</kind>
             <string>hover = true
 sprite_index = spr_lidup2v2
+
+depth = 0
+with obj_lowerlid{depth = -1}
 
 </string>
           </argument>

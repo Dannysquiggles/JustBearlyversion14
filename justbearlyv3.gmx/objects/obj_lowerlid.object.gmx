@@ -117,6 +117,7 @@ move_towards_point(x,startpos, 0)
         {
             add = 0
             global.open -= 1
+            global.rate = 30;
         }   
 }
 else  if global.open = 2
@@ -251,6 +252,9 @@ hover = false
             <string>
 sprite_index = spr_liddown2v2
 hover = true
+
+depth = 0
+with obj_upperlid{depth = -1}
 </string>
           </argument>
         </arguments>

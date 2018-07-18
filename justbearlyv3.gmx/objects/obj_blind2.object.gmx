@@ -240,7 +240,7 @@ image_angle = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (file_exists("Done.sav"))
+            <string>if steam_get_achievement("ACHIEVEMENT_FINISH")
 {
     image_index = 1
 }
@@ -267,7 +267,7 @@ image_angle = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (file_exists("Done.sav"))
+            <string>if steam_get_achievement("ACHIEVEMENT_FINISH")
 {
     offset = mouse_y - y;
     still = false

@@ -89,12 +89,12 @@ else if place_meeting(x,y, obj_interest) &amp;&amp; click = true
     poi = 1
     sprite_index = spr_curser_closed
 }
-else if place_meeting(x,y, obj_blind2) &amp;&amp; click = false  &amp;&amp; file_exists('Done.sav')
+else if place_meeting(x,y, obj_blind2) &amp;&amp; click = false  &amp;&amp; steam_get_achievement("ACHIEVEMENT_FINISH")
 {
     poi = 1
     sprite_index = spr_open
 }
-else if place_meeting(x,y, obj_blind2) &amp;&amp; click = true &amp;&amp; file_exists('Done.sav')
+else if place_meeting(x,y, obj_blind2) &amp;&amp; click = true &amp;&amp; steam_get_achievement("ACHIEVEMENT_FINISH")
 {
     poi = 1
     sprite_index = spr_curser_closed

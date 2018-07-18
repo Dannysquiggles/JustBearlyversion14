@@ -32,7 +32,7 @@ global.open = 0;
 else
 {
 global.open = 0;
-global.rate = 25;
+global.rate = 15;
 }
 move = 0
 
