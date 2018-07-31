@@ -69,7 +69,7 @@ image_speed = 15
             <kind>1</kind>
             <string>if !instance_exists(obj_swipe)
 {
-    instance_create(room_width/2, room_height/2, obj_swipe)
+    instance_create(room_width, 0, obj_swipe)
 }
 </string>
           </argument>
